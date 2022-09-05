@@ -9,7 +9,7 @@ pipeline {
 
     stage('test') {
       steps {
-        sh 'chmod +x -R ${env.WORKSPACE}'
+        sh "chmod +x -R ${env.WORKSPACE}"
         sh './ejemplo_while.sh'
         echo 'Esta es la etapa de Pruebas'
       }
